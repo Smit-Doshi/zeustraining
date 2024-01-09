@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main__container">
+        <div class="nav__container">
+            <nav class="nav">
+                <div class="nav__left">
+                    <img src="/images/logo.svg" alt="" class="nav__left-logo">
+                </div>
+                <div class="nav__right"></div>
+            </nav>
+        </div>
+
+        <section class="container">
+            <div class="login__container">
+                <div class="login__header">
+                    <a href="#"><img src="/images/back.svg" alt="" class="login__back"></a>
+                    <p class="login__title">Log in with Quantum</p>
+                </div>
+                <form action="" class="login__form">
+
+                    <div class="login__form-radio">
+                        <input type="radio" name="type" id="District"> District
+                        <input type="radio" name="type" id="School"> Independent School
+                    </div>
+
+                    <div class="form_control">
+                        <label for="state">State*</label>
+                        <select name="state" id="state">
+                            <option value="Alabama">Alabama</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                        </select>
+                    </div>
+
+                    <div class="form_control">
+                        <label for="district">District*</label>
+                        <select name="district" id="district">
+                            <option value="Alabama School District">Alabama School District</option>
+                            <option value="Gujarat School District">Gujarat School District</option>
+                        </select>
+                    </div>
+
+                    <div class="form_control">
+                        <input type="text" name="username" id="unsername" placeholder="Username/Email ID*">
+                        <div class="form_subfield">
+                            <a href="#" class="forgot_username">FORGOT USERNAME?</a>
+                        </div>
+                    </div>
+
+
+                    <div class="form_control">
+                        <div class="form__control-password">
+                            <input type="password" name="password" id="password" placeholder="Password*">
+                            <button class="password_preview"></button>
+                        </div>
+                        <div class="form_subfield">
+                            <a href="#" class="forgot_password">FORGOT PASSWORD?</a>
+                        </div>
+                    </div>
+
+                    <div class="checker">
+                        <input type="checkbox" name="remember" id="remember">
+                        Remember me
+                    </div>
+
+                    <div class="form_control">
+                        <button type="submit" class="btn">LOG IN</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Link Section  -->
+        <section class="links">
+            <div>
+                <ul class="sublinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer Section  -->
+
+        <footer class="footer__container">
+            <img src="/images/footer_logo.svg" alt="">
+            <p class="footer__copy">Copyright &#169; 2020-2021 <b>Zeus-Systems Pvt.Ltd.</b> All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
