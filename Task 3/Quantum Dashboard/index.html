@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main__wrapper">
+        <div class="nav__container">
+            <nav class="nav">
+                <div class="nav__left">
+                    <img src="/images/logo.svg" alt="" class="nav__left-logo">
+                </div>
+                <div class="nav__right">
+                    <ul>
+                        <li><a href="#dashboard" class="active">DASHBOARD</a></li>
+                        <li><a href="#content">CONTENT</a></li>
+                        <li><a href="#user">USERS</a></li>
+                        <li><a href="#report">REPORTS</a></li>
+                        <li><a href="#admin">ADMIN</a></li>
+                        <li><a href="#"><img src="/images/alerts.svg" alt="alert image"></a></li>
+                        <li><a href="#"><img src="/images/announcements.svg" alt=""></a></li>
+                        <li><a href="#"><img src="/images/account_circle.svg" alt="account image"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <section class="main__container">
+
+            <div class="header">
+                <div>
+                    <div class="header__items">
+                        <img src="/images/courses.svg" alt="Course image">
+                        <p class="header__items-count">4</p>
+                        <p class="header__items-title">Courses</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="header__items">
+                        <img src="/images/classes.svg" alt="Course image">
+                        <p class="header__items-count">4</p>
+                        <p class="header__items-title">Classes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter">
+                <div class="filter__left">
+                    <p class="filter__data">Showing 4 of 4 courses</p>
+                </div>
+                <div class="filter__right">
+                    <label for="sort" class="filter__data">Sort By:</label>
+                    <select name="sort" id="sort">
+                        <option value="course_name">Course Name</option>
+                        <option value="course_duration">Course Duration</option>
+                    </select>
+                    <button class="btn-sort">
+                        <img src="/images/sort.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <hr class="horizontal_line">
+        </section>
+
+        <!-- Card Section  -->
+        <section class="main">
+
+            <!-- Card 1 -->
+            <section class="card__container">
+                <div class="card">
+                    <img src="/images/imageMask-1.svg" alt="card image" class="card__img">
+                    <div class="card__content">
+                        <h3>Acceleration</h3>
+                        <span class="card__subject">Physics | Grade 7 <span class="increment">+2</span></span>
+                        <p class="card__chapter"><b>4</b>Units <b>18</b>Lessons <b>24</b>Topics</p>
+                        <select name="" id="" class="card__teacher">
+                            <option value="Mr. Frank's Class B">Mr. Frank's Class B</option>
+                            <option value="Mr. Frank's Class A">Mr. Frank's Class A</option>
+                        </select>
+
+                        <p class="card__timestamp">
+                            <span class="card__student">50 Students</span>
+                            <span class="card__date">21-Jan-2020 - 21-Aug-2020</span>
+                        </p>
+                        <img src="/images/favourite.svg" alt="favourite image" class="card__favourite">
+                    </div>
+                </div>
+                <hr>
+                <div class="card__footer">
+                    <img src="/images/preview.svg" alt="preview image">
+                    <img src="/images/manage_course.svg" alt="manage course image">
+                    <img src="/images/grade_submissions.svg" alt="grade submission image">
+                    <img src="/images/reports.svg" alt="reports image">
+
+                </div>
+            </section>
+
+            <!-- Card 2 -->
+            <section class="card__container">
+                <div class="card">
+                    <img src="/images/imageMask-2.svg" alt="card image" class="card__img">
+                    <div class="card__content">
+                        <h3>Displacement, Velocity and Speed</h3>
+                        <span class="card__subject">Physics 2 | Grade 6 <span class="increment">+3</span></span>
+                        <p class="card__chapter"><b>2</b>Units <b>15</b>Lessons <b>20</b>Topics</p>
+                        <select name="" id="" class="card__teacher" disabled>
+                            <option value="Mr. Frank's Class B">No Classes</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="card__footer">
+                    <img src="/images/preview.svg" alt="preview image">
+                    <img src="/images/manage_course.svg" alt="manage course image" class="disabled">
+                    <img src="/images/grade_submissions.svg" alt="grade submission image" class="disabled">
+                    <img src="/images/reports.svg" alt="reports image">
+
+                </div>
+            </section>
+
+            <!-- Card 3 -->
+            <section class="card__container">
+                <div class="card">
+                    <img src="/images/imageMask.svg" alt="card image" class="card__img">
+                    <div class="card__content">
+                        <h3>Introduction to Biology: Micro organisms and how they affec...</h3>
+                        <span class="card__subject">Biology | Grade 4 <span class="increment">+1</span></span>
+                        <p class="card__chapter"><b>5</b>Units <b>16</b>Lessons <b>22</b>Topics</p>
+                        <select name="" id="" class="card__teacher">
+                            <option value="All Classes">All Classes</option>
+                            <option value="Mr. Frank's Class A">Mr. Frank's Class A</option>
+                        </select>
+
+                        <p class="card__timestamp">
+                            <span class="card__student">300 Students</span>
+                        </p>
+
+                        <img src="/images/favourite.svg" alt="favourite image" class="card__favourite">
+                    </div>
+                </div>
+                <hr>
+                <div class="card__footer">
+                    <img src="/images/preview.svg" alt="preview image">
+                    <img src="/images/manage_course.svg" alt="manage course image" class="disabled">
+                    <img src="/images/grade_submissions.svg" alt="grade submission image" class="disabled">
+                    <img src="/images/reports.svg" alt="reports image">
+
+                </div>
+            </section>
+
+            <!-- Card 4 -->
+            <section class="card__container">
+                <div class="card">
+                    <img src="/images/imageMask-3.svg" alt="card image" class="card__img">
+                    <div class="card__content">
+                        <h3>Introduction to High School Mathematics</h3>
+                        <span class="card__subject">Mathematics | Grade 8 <span class="increment">+3</span></span>
+                        <p class="card__chapter"><b>4</b>Units <b>18</b>Lessons <b>24</b>Topics</p>
+                        <select name="" id="" class="card__teacher">
+                            <option value="Mr. Frank's Class A">Mr. Frank's Class A</option>
+                            <option value="Mr. Frank's Class B">Mr. Frank's Class B</option>
+                        </select>
+
+                        <p class="card__timestamp">
+                            <span class="card__student">44 Students</span>
+                            <span class="card__date">14-Oct-2019 - 20-Oct-2020</span>
+                        </p>
+
+                        <img src="/images/favourite.svg" alt="favourite image" class="card__favourite">
+                    </div>
+                </div>
+                <hr>
+                <div class="card__footer">
+                    <img src="/images/preview.svg" alt="preview image">
+                    <img src="/images/manage_course.svg" alt="manage course image">
+                    <img src="/images/grade_submissions.svg" alt="grade submission image">
+                    <img src="/images/reports.svg" alt="reports image">
+
+                </div>
+            </section>
+        </section>
+
+
+        </section>
+        <!-- Link Section  -->
+        <section class="links">
+            <div>
+                <ul class="sublinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer Section  -->
+
+        <footer class="footer__container">
+            <img src="/images/footer_logo.svg" alt="">
+            <p class="footer__copy">Copyright &#169; 2020-2021 <b>Zeus-Systems Pvt.Ltd.</b> All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

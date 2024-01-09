@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url(/Quicksand-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+
+/* ----------- NAVBAR CSS -----------*/
+
+.nav {
+    background-image: url("/images/header-pattern.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.nav__left-logo {
+    width: 134px;
+    height: 36px;
+    margin: 5px 10px;
+    opacity: 1;
+}
+
+.nav__right ul {
+
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__right ul a {
+    text-decoration: none;
+    margin-left: 30px;
+    color: #3FD28B;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav__right .active {
+    color: white;
+    padding-bottom: 16px;
+    border-bottom: 4px solid white;
+}
+
+/* --------- MAIN CONTAINER ------------ */
+
+#main__wrapper {
+
+    background-color: #EEEEEE;
+}
+
+.header {
+
+    margin: 20px 10px;
+    background-color: #8DDC97;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.header__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__items p {
+
+    margin: 2px 5px;
+}
+
+.header__items-count {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.header__items-title {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Filter Section  */
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+select {
+
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    width: 200px;
+}
+
+.filter__data {
+
+    font-size: 12px;
+    color: #686868;
+}
+
+.btn-sort {
+    border: none;
+    background-color: transparent;
+}
+
+.horizontal_line {
+
+    margin: 10px 10px;
+}
+
+/* ----------Card CSS ---------*/
+
+.card__container {
+
+    /* display: flex; */
+    background-color: white;
+    width: 550px;
+    height: 230px;
+    margin-left: 30px;
+    border-radius: 4px;
+}
+
+.card {
+    display: flex;
+    color: #666666;
+    padding: 20px;
+}
+
+h3 {
+    color: black;
+}
+
+.card img {
+    width: 132px;
+    height: 150px;
+}
+
+.card__content {
+    margin-left: 10px;
+}
+
+.card__content>* {
+
+    margin-bottom: 5px;
+}
+
+.card__timestamp {
+    font-size: 12px;
+}
+
+.card .card__favourite {
+    width: 20px;
+    height: 24px;
+    position: relative;
+    top: -125px;
+    right: -350px;
+}
+
+.card__footer {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+
+b {
+    color: black;
+    padding: 0 5px;
+}
+
+.card__footer .disabled {
+
+    opacity: 0.5;
+}
+
+.increment {
+    color: #1F7A54;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* ----------- LINKS CSS  ---------*/
+
+.links {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sublinks {
+    display: flex;
+    list-style: none;
+}
+
+.sublinks li {
+    margin: 10px 20px;
+}
+
+.sublinks li a {
+    color: #1F7A54;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.main {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* ---------- FOOTER CSS ----------- */
+
+.footer__container {
+    background-color: #E0E1E1;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer__copy {
+
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
