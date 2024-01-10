@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("/Quicksand-VariableFont_wght.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand";
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+  background: #EEEEEE;
+}
+
+.navbar {
+  background: url("/images/header pattern svg.svg");
+  opacity: 1;
+  background-size: cover;
+  width: 100%;
+  background-color: #25313F;
+  border-bottom: 4px solid #3AC7EC;
+}
+.navbar .navbar__logo {
+  margin-left: 2rem;
+  padding: 0.25rem;
+}
+
+#body__wrapper {
+  background: #EEEEEE;
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  padding: 8px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 30px;
+  padding: 15px;
+  border-top: 4px solid #3AC7EC;
+}
+
+.login__header {
+  display: flex;
+}
+
+.login__header > * {
+  margin-right: auto;
+}
+
+.login__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form > * {
+  margin-top: 20px;
+}
+
+.radio__selector label {
+  display: inline-block;
+  margin-right: 10px;
+}
+.radio__selector label:enabled {
+  color: #1F7A54;
+}
+.radio__selector label input {
+  width: 30px;
+  height: 20px;
+}
+
+.form__input label {
+  display: block;
+  color: #666666;
+  font-size: 12px;
+}
+
+select, .form__input input {
+  width: 400px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form__input a {
+  display: block;
+  margin-left: 240px;
+  color: #1F7A54;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form__input .password_preview {
+  display: inline;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+  right: 25px;
+}
+
+.checkbox__selector {
+  accent-color: #1F7A54;
+  width: 15px;
+  height: 15px;
+}
+
+.form__input-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__input-submit button {
+  background-color: #3FD28B;
+  width: 200px;
+  height: 40px;
+  border: none;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2392156863);
+}
+
+.sublink ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.sublink ul li {
+  list-style: none;
+}
+.sublink ul li a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #1F7A54;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 5px;
+  background-color: #E0E1E1;
+}
+.footer__container > * {
+  margin-right: 10px;
+}
+.footer__container a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 420px) {
+  .login {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  select, .form__input input {
+    width: 200px;
+    height: 15px;
+  }
+}/*# sourceMappingURL=styles.css.map */

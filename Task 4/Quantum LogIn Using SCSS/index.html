@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Wrapper  -->
+    <div id="main">
+
+        <!-- Navbar Section  -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <img src="/images/logo.svg" alt="Navbar logo" class="navbar__logo">
+            </div>
+        </nav>
+
+
+        <div id="body__wrapper">
+            <section class="login">
+                <div class="login__header">
+                    <img src="/images/back.svg" alt="move back image" class="login__back-image">
+                    <h2 class="login__title">Log in with Quantum</h2>
+                </div>
+                <div class="login__body">
+                    <form action="">
+                        <div class="radio__selector">
+                            <label for="district">
+                                <input type="radio" name="type" id="district">
+                                District
+                            </label>
+
+                            <label for="school">
+                                <input type="radio" name="type" id="school">
+                                Independent School
+                            </label>
+                        </div>
+
+                        <div class="form__input">
+                            <label for="state">State*</label>
+                            <select name="state" id="state">
+                                <option value="Alabama">Alabama</option>
+                                <option value="Gujarat">Gujarat</option>
+                            </select>
+                        </div>
+
+                        <div class="form__input">
+                            <label for="district">District*</label>
+                            <select name="district" id="district">
+                                <option value="Alabama School District">Alabama School District</option>
+                                <option value="Gujarat School District">Gujarat School District</option>
+                            </select>
+                        </div>
+
+                        <div class="form__input">
+                            <input type="text" name="username" id="username" placeholder="Username/Email ID*">
+                            <a href="#forgot_username">FORGOT USERNAME?</a>
+                        </div>
+
+                        <div class="form__input">
+                            <input type="password" name="password" id="password"
+                                placeholder="Password*"><button class="password_preview"><img src="/images/preview.svg" alt=""></button>
+                            <a href="#forgot_password">FORGOT PASSWORD?</a>
+                        </div>
+
+                        <div>
+                            <label for="remember">
+                                <input type="checkbox" name="remember" id="remember" class="checkbox__selector">
+                                Remember me
+                            </label>
+                        </div>
+
+                        <div class="form__input-submit">
+                            <button type="submit" class="login__submit">LOG IN</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- sublink section -->
+
+        <div class="sublink">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer Section  -->
+        <footer class="footer__container">
+
+            <img src="/images/footer_logo.svg" alt="footer logo image">
+            <p>Copyright &#169;	2020-2021 <a href="https://www.zeuslearning.com"><b>Zeus Systems Pvt. Ltd.</b></a>All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
