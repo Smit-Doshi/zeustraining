@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2-JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="title">My first web page</h1>
+        <h2 class="subtitle">What this is</h2>
+
+        <p>Welcome to <i>my first webpage.</i>I created this webpage without the assisstant of a webpage editor. Just my
+            little text editor and a keen <b class="important_data">understanding of html.</b></p>
+        <h2 class="subtitle">Why this is</h2>
+        <ul>
+            <li>To learn HTML</li>
+            <li>List element</li>
+            <ol>
+                <li>Home</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ol>
+            <li>Here I have created ordered and unordered list</li>
+        </ul>
+
+        <h3 class="subtitle">ZeusLearning.com</h3>
+        <a href="http://www.zeusLearning.com" target="_blank">This link will open zeuslearning.com in new tab</a>
+        <h3 class="subtitle">On click of the following image navigate to Google.com</h3>
+        <a href="https://www.google.com"><img src="google.png" alt="google logo"></a>
+        <h4 class="content_heading">Some random table</h4>
+        <table border="2">
+            <tr>
+                <td>Row 1, cell 1</td>
+                <td>Row 1, cell 2</td>
+                <td>Row 1, cell 3</td>
+            </tr>
+
+            <tr>
+                <td>Row 2, cell 1</td>
+                <td>Row 2, cell 2</td>
+                <td>Row 2, cell 3</td>
+            </tr>
+
+            <tr>
+                <td>Row 3, cell 1</td>
+                <td>Row 3, cell 2</td>
+                <td>Row 3, cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 4, cell 1</td>
+                <td>Row 4, cell 2</td>
+                <td>Row 4, cell 3</td>
+            </tr>
+        </table>
+
+        <h4 class="content_heading">Some random form</h4>
+
+        <p><b class="important_data">Note:</b>It looks the part, but won't do a anything.</p>
+
+        <form action = "#" method="post" onsubmit="return formSubmit()">
+            <label for="name">Name:</label><br><br>
+            <input type="text" name="name" id="name" placeholder="Your name"><br><br>
+
+            <label for="comments">Comments:</label><br><br>
+            <textarea name="comments" id="comment" cols="20" rows="8" placeholder="Your comments"></textarea><br><br>
+
+            <label>Are you:</label><br><br>
+            <input type="radio" name="gender" value="Male" id="male">Male <br><br>
+            <input type="radio" name="gender" value="Female" id="female">Female <br><br>
+
+            <button type="submit">Submit Query</button> <span class="success_message"></span>
+        </form>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
