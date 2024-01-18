@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Wilson Kumar",
+        "isSeen": false,
+        "message": "No classes will be held on 21st Nov",
+        "attachments": "2 files are attached",
+        "time": "15-Sep-2018 at 07:21 pm"
+    },
+    {
+        "id": 2,
+        "name": "Samson White",
+        "isSeen": true,
+        "message": "Guest lecture on Geometry on 20th September",
+        "attachments": "2 files are attached",
+        "time": "15-Sep-2018 at 07:21 pm"
+    },
+    {
+        "id": 3,
+        "name": "Wilson Kumar",
+        "isSeen": true,
+        "message": "No classes will be held on 25th Dec",
+        "attachments": "",
+        "time": "15-Sep-2018 at 07:21 pm"
+    }
+]

@@ -1,0 +1,390 @@
+$linkColor: #3FD28B;
+$primaryColor : #EEEEEE;
+$header_backgroundColor: #8DDC97;
+$expired_background : #FFE4E6;
+$expiredColor : #D80000;
+$footer_backgroundColor : #E0E1E1;
+$incrementColor : #1F7A54;
+$borderBottom : #31B9E4;
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url("/Quicksand-VariableFont_wght.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 100ms;
+    font-family: 'Quicksand';
+}
+
+.navbar__container {
+
+    background: url("/images/header\ pattern\ svg.svg");
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 2rem;
+    background-color: black;
+    border-bottom: 4px solid $borderBottom;
+}
+
+.navbar__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .navbar__links ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: $linkColor;
+        }
+
+        .active {
+
+            color: white;
+            border-bottom: 4px solid white;
+            padding-bottom: 1rem;
+        }
+
+    }
+
+    .navbar__actions ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+    }
+}
+
+.notification {
+
+    background-color: blue;
+    color: white;
+    padding: 0.125rem;
+    border-radius: 50%;
+    position: absolute;
+    // right: 100px;
+}
+
+.navbar__toogle button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: none;
+}
+
+.inactive {
+    display: none !important;
+}
+
+.active_menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    min-width: 8rem;
+    top: 3rem;
+    font-size: 0.8rem;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0px 13px 20px #0000003D;
+    transition: 0.2s ease-out;
+
+    li {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        text-decoration: none;
+        color: $linkColor;
+        font-weight: 600;
+    }
+
+    i {
+        color: $linkColor;
+    }
+}
+
+.announcements_inactive {
+    display: none !important;
+}
+
+.announcements_active {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    max-width: 15rem;
+    max-height: 5rem;
+    overflow-y: scroll;
+    top: 3rem;
+    right: 3rem;
+    font-size: 0.8rem;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0px 13px 20px #0000003D;
+    transition: 0.2s ease-out;
+
+    li {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        text-decoration: none;
+        color: $linkColor;
+    }
+
+    i {
+        color: #1F7A54;
+        font-size: 1rem;
+    }
+
+}
+
+.notification_body {
+    font-size: 14px;
+    margin-top: 0.2rem;
+}
+
+.notification_header,
+.notification_footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    gap: 0.3rem;
+    margin-top: 0.2rem;
+
+}
+
+.notification_line {
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #2222221F;
+}
+
+.notification_expand {
+
+    position: sticky;
+    display: flex;
+    bottom: 0px;
+    color: $linkColor;
+    justify-content: space-between;
+    padding: 5px;
+    box-shadow: 0px 1px 6px #0000003D;
+    border-radius: 0 2px;
+}
+
+.alert_inactive {
+    display: none !important;
+}
+
+.alert_active {
+
+    @extend .announcements_active;
+    right: 8rem;
+}
+
+#body__wrapper {
+    background-color: $primaryColor;
+    min-height: 100vh;
+    padding-top: 2rem;
+}
+
+.body__header {
+
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: $header_backgroundColor;
+    margin: 0 2rem;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        .count {
+            font-size: 1.5rem;
+            font-weight: bold;
+
+        }
+    }
+}
+
+.body__filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 2rem;
+
+    div>* {
+        margin-left: 0.75rem;
+    }
+
+    select {
+
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-bottom: 1px solid #ccc;
+        min-width: 8rem;
+        min-height: 2.5rem;
+        font-weight: 600;
+    }
+}
+
+#body__card {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 30rem;
+    border-radius: 2px;
+}
+
+.card__favourite {
+    float: right;
+}
+
+.card__body {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card__content>* {
+
+    margin-bottom: 0.5rem;
+
+    b {
+        margin: 0 0.25rem;
+    }
+}
+
+.card__content select {
+
+
+    min-width: 10rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.card__footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.disabled__logo {
+
+    opacity: 0.5;
+}
+
+.card__expired {
+
+    color: $expiredColor;
+    background-color: $expired_background;
+    text-transform: uppercase;
+    width: fit-content;
+    position: relative;
+    top: -1.5rem;
+    left: -1.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.increment {
+    font-weight: bold;
+    color: $incrementColor;
+}
+
+hr {
+    margin-top: 0.5rem;
+}
+
+#body__sublink ul {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+
+    a {
+        text-decoration: none;
+        color: $linkColor;
+    }
+
+}
+
+#footer__container {
+
+    margin-top: 1rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    gap: 1rem;
+    padding: 0.5rem;
+    background-color: $footer_backgroundColor;
+
+    a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.25rem 0.35rem;
+    }
+
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar__toogle button {
+        display: block;
+    }
+
+    #body__card {
+        grid-template-columns: 1fr;
+    }
+}

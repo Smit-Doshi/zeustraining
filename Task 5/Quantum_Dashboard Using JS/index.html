@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- remixicon icon  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="main__wrapper">
+
+        <!-- Navbar Section -->
+        <nav class="navbar__container">
+            <div class="navbar__left">
+                <img src="/images/logo.svg" alt="Navbar logo">
+            </div>
+            <div class="navbar__right">
+
+                <div class="navbar__links">
+                    <ul>
+                        <li><a href="#dashboard" class="active">DASHBOARD</a></li>
+                        <li><a href="#content">CONTENT</a></li>
+                        <li><a href="#user">USERS</a></li>
+                        <li><a href="#report">REPORTS</a></li>
+                        <li><a href="#admin">ADMIN</a></li>
+                    </ul>
+                </div>
+                <div class="navbar__actions">
+
+                    <ul>
+                        <li><a href="#alert"><img src="/images/alerts.svg" alt="Alert logo" id="alert_logo"></a></li>
+                        <li><a href="#alert"><img src="/images/announcements.svg" alt="announcements logo"
+                                    id="announcements_logo"></a></li>
+                        <li><a href="#profile"><img src="/images/account_circle.svg" alt="account logo"></a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar__toogle">
+                    <img src="/images/hamburger-menu.svg" class="hamburger-logo" alt="">
+                </div>
+                <!-- Humberger Menu Section  -->
+                <ul id="hamburger-links" class="inactive active_menu">
+                    <li><a href="#dashboard" class="active">DASHBOARD</a></li>
+                    <li><a href="#content">CONTENT</a><i class="ri-arrow-down-s-line"></i></li>
+                    <li><a href="#user">USERS</a><i class="ri-arrow-down-s-line"></i></li>
+                    <li><a href="#report">REPORTS</a><i class="ri-arrow-down-s-line"></i></li>
+                    <li><a href="#admin">ADMIN</a><i class="ri-arrow-down-s-line"></i></li>
+                </ul>
+
+                <ul id="announcements_notification" class="announcements_inactive announcements_active">
+                    <!-- announcement section -->
+                </ul>
+            </div>
+            <ul id="alert_notification" class="alert_inactive alert_active">
+                <!-- alert section  -->
+            </ul>
+        </nav>
+
+        <!-- Body Section -->
+
+        <div id="body__wrapper">
+            <div class="body__header">
+                <div>
+                    <img src="/images/courses.svg" alt="Courses image">
+                    <p class="count">4</p>
+                    <p class="names">Courses</p>
+                </div>
+                <div>
+                    <img src="/images/classes.svg" alt="Classes image">
+                    <p class="count">4</p>
+                    <p class="names">Classes</p>
+                </div>
+            </div>
+
+            <div class="body__filter">
+                <div>
+                    <p>Showing 4 of 4 courses</p>
+                </div>
+                <div>
+                    <label for="filter">Sort By:</label>
+                    <select name="filter" id="filter">
+                        <option value="Course Name">Course Name</option>
+                        <option value="Course rating">Course Rating</option>
+                    </select>
+                    <img src="/images/sort.svg" alt="Sort logo">
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Card Section  -->
+
+            <div id="body__card">
+
+                <!-- Card Content  -->
+
+            </div>
+
+            <!-- Sublink Section  -->
+
+            <div id="body__sublink">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Section -->
+
+            <div id="footer__container">
+                <footer class="footer">
+                    <img src="/images/footer_logo.svg" alt="Footer logo">
+                    <p>Copyright &#169; 2020-2021 <b><a href="https://www.zeuslearning.com">Zeus Systems Pvt.
+                                Ltd.</a></b>All rights reserved.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Js File  -->
+<script src="/script.js"></script>
+<script src="/eventScript.js"></script>
+
+</html>

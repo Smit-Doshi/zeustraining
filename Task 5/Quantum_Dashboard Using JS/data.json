@@ -1,0 +1,90 @@
+[
+    {
+        "courseName": "Accelaration",
+        "image": "imageMask-1.svg",
+        "subjectName": "Physics",
+        "subjectGrade": 7,
+        "subjectIncrement": 2,
+        "subjectUnits": 4,
+        "subjectLessons": 18,
+        "subjectTopics": 24,
+        "subjectTeacher": [
+            "Mr. Frank's Class B",
+            "Mr. Frank's Class A"
+        ],
+        "NoOfStudent": "50 Students",
+        "CourseDuration": "21-Jan-2020 - 21-Aug-2020",
+        "subjectPreview": true,
+        "subjectReports": true,
+        "subjectSubmission": true,
+        "subjectManage": true,
+        "isFavourite": true,
+        "subjectExpired": false
+    },
+    {
+        "courseName": "Displacement, Velocity and Speed",
+        "image": "imageMask-2.svg",
+        "subjectName": "Physics 2",
+        "subjectGrade": 6,
+        "subjectIncrement": 3,
+        "subjectUnits": 2,
+        "subjectLessons": 15,
+        "subjectTopics": 20,
+        "subjectTeacher": [
+            "No Classes"
+        ],
+        "NoOfStudent": "",
+        "CourseDuration": "",
+        "subjectPreview": true,
+        "subjectReports": false,
+        "subjectSubmission": false,
+        "subjectManage": true,
+        "isFavourite": true,
+        "subjectExpired": false
+    },
+    {
+        "courseName": "Introduction to Biology: Micro organisms and how they affec...",
+        "image": "imageMask.svg",
+        "subjectName": "Biology",
+        "subjectGrade": 4,
+        "subjectIncrement": 1,
+        "subjectUnits": 5,
+        "subjectLessons": 16,
+        "subjectTopics": 22,
+        "subjectTeacher": [
+            "All Classes",
+            "Mr. Frank's Class B",
+            "Mr. Frank's Class A"
+        ],
+        "NoOfStudent": "300 Students",
+        "CourseDuration": "",
+        "subjectPreview": true,
+        "subjectReports": false,
+        "subjectSubmission": false,
+        "subjectManage": true,
+        "isFavourite": true,
+        "subjectExpired": false
+    },
+    {
+        "courseName": "Introduction to High School Mathematics",
+        "image": "imageMask-3.svg",
+        "subjectName": "Mathematics",
+        "subjectGrade": 8,
+        "subjectIncrement": 3,
+        "subjectUnits": "",
+        "subjectLessons": "",
+        "subjectTopics": "",
+        "subjectTeacher": [
+            "Mr. Frank's Class A",
+            "Mr. Frank's Class B"
+        ],
+        "NoOfStudent": "44 Students",
+        "CourseDuration": "14-Oct-2019 - 20-Oct-2020",
+        "subjectPreview": true,
+        "subjectReports": true,
+        "subjectSubmission": true,
+        "subjectManage": true,
+        "isFavourite": false,
+        "subjectExpired": true
+    }
+]
